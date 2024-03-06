@@ -57,7 +57,7 @@
 ^https?:\/\/img\d+\.360buyimg\.com\/jddjadvertise\/ - reject
 
 # L
-^https?:\/\/app-gateway\.leisuapi\.com\/v\d\/app\/mobile\/(banners|ads) reject-200
+^https?:\/\/app-gateway\.leisuapi\.com\/v\d\/app\/mobile\/(banners|ads) - reject
 
 # N
 # ---(NetEase)---
