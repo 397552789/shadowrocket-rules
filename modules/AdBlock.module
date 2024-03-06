@@ -16,8 +16,6 @@
 ^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.taobao\.idle\.home\.welcome\/ - reject
 # > Fliggy - acs.m.taobao.com
 ^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.trip\.activity\.querytmsresources\/ - reject
-# > Taopiaopiao - acs.m.taobao.com
-^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.film\.mtopadvertiseapi\.queryadvertise\/ - reject
 # > AMap - m*.amap.com
 ^https?:\/\/m\d\.amap\.com\/ws\/valueadded\/alimama\/splash_screen\/ - reject
 
@@ -50,9 +48,6 @@
 # D
 # > DouYuZhiBo - rtbapi.douyucdn.cn
 ^https?:\/\/rtbapi\.douyucdn\.cn\/japi\/sign\/app\/getinfo - reject
-# > Dangdang - e.dangdang.com
-^https?:\/\/mapi\.dangdang\.com\/index\.php\?action=init - reject
-^https?:\/\/e\.dangdang\.com\/media\/api\d\.go\?action=getDeviceStartPage - reject
 
 # J
 # > JD - api.m.jd.com,img*.360buyimg.com
@@ -61,6 +56,8 @@
 ^https?:\/\/(bdsp-x|dsp-x)\.jd\.com\/adx\/ - reject
 ^https?:\/\/img\d+\.360buyimg\.com\/jddjadvertise\/ - reject
 
+# L
+^https?:\/\/app-gateway\.leisuapi\.com\/v\d\/app\/mobile\/(banners|ads) reject-200
 
 # N
 # ---(NetEase)---
@@ -112,4 +109,4 @@
 # Block Ads End
 
 [MITM]
-hostname = %APPEND% acs.m.taobao.com,m*.amap.com,api-new.app.acfun.cn,api.bjxkhc.com,issuecdn.baidupcs.com,pan.baidu.com,newclient.map.baidu.com,mime.baidu.com,act.vip.iqiyi.com,intl.iqiyi.com,www.bodivis.com.cn,yxyapi*.drcuiyutao.com,rtbapi.douyucdn.cn,maicai.api.ddxq.mobi,mobileapi-v6.elong.com,i.ys7.com,www.flyertea.com,dsa-mfp.fengshows.cn,api.feng.com,*-release.wuta-cam.com,business.msstatic.com,imeclient.openspeech.cn,api.intsig.net,ih2.ireader.com,nnapp.cloudbae.cn:0,ib-soft.net,jxd524.github.io,api.m.jd.com,img*.360buyimg.com,api.jxedt.com,*.kakamobi.cn,app-api.jinse.com,ios.wps.cn,*.kingsoft-office-service.com,api.gotokeep.com,api.kkmh.com,122.14.246.33,175.102.178.52,api.club.lenovo.cn,api.jr.mi.com,home.mi.com,api.mgzf.com,cdn.moji.com,img.meituan.net,p*.meituan.net,s3plus.meituan.net,flowplus.meituan.net,capi.mwee.cn,mapi.mafengwo.cn,app.mixcapp.com,appconf.mail.163.com,c.m.163.com,client.mail.163.com,interface*.music.163.com,sp.kaola.com,support.you.163.com,p.du.163.com,app-api.niu.com,gfp.veta.naver.com,slapi.oray.net,pss.txffp.com,api.yangkeduo.com,api.pinduoduo.com,mrobot.pconline.com.cn,mrobot.pcauto.com.cn,open.qyer.com,media.qyer.com,api.qbb6.com,mage.if.qidian.com,msspjh.emarbox.com,*.uve.weibo.com,weibointl.api.weibo.cn,tqt.weibo.cn,*.k.sohu.com,*.tv.sohu.com,ap*.smzdm.com,4gimg.map.qq.com,r.inews.qq.com,news.ssp.qq.com,mp.weixin.qq.com,www.zhihu.com,api.zhihu.com
+hostname = %APPEND% acs.m.taobao.com,m*.amap.com,api-new.app.acfun.cn,api.bjxkhc.com,app-gateway.leisuapi.com,issuecdn.baidupcs.com,pan.baidu.com,newclient.map.baidu.com,mime.baidu.com,act.vip.iqiyi.com,intl.iqiyi.com,www.bodivis.com.cn,yxyapi*.drcuiyutao.com,rtbapi.douyucdn.cn,maicai.api.ddxq.mobi,mobileapi-v6.elong.com,i.ys7.com,www.flyertea.com,dsa-mfp.fengshows.cn,api.feng.com,*-release.wuta-cam.com,business.msstatic.com,imeclient.openspeech.cn,api.intsig.net,ih2.ireader.com,nnapp.cloudbae.cn:0,ib-soft.net,jxd524.github.io,api.m.jd.com,img*.360buyimg.com,api.jxedt.com,*.kakamobi.cn,app-api.jinse.com,ios.wps.cn,*.kingsoft-office-service.com,api.gotokeep.com,api.kkmh.com,122.14.246.33,175.102.178.52,api.club.lenovo.cn,api.jr.mi.com,home.mi.com,api.mgzf.com,cdn.moji.com,img.meituan.net,p*.meituan.net,s3plus.meituan.net,flowplus.meituan.net,capi.mwee.cn,mapi.mafengwo.cn,app.mixcapp.com,appconf.mail.163.com,c.m.163.com,client.mail.163.com,interface*.music.163.com,sp.kaola.com,support.you.163.com,p.du.163.com,app-api.niu.com,gfp.veta.naver.com,slapi.oray.net,pss.txffp.com,api.yangkeduo.com,api.pinduoduo.com,mrobot.pconline.com.cn,mrobot.pcauto.com.cn,open.qyer.com,media.qyer.com,api.qbb6.com,mage.if.qidian.com,msspjh.emarbox.com,*.uve.weibo.com,weibointl.api.weibo.cn,tqt.weibo.cn,*.k.sohu.com,*.tv.sohu.com,ap*.smzdm.com,4gimg.map.qq.com,r.inews.qq.com,news.ssp.qq.com,mp.weixin.qq.com,www.zhihu.com,api.zhihu.com
